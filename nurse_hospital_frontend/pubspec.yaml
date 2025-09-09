@@ -23,7 +23,8 @@ dependencies:
   google_maps_flutter: ^2.9.0
   flutter_slidable: ^3.1.0
   flutter_local_notifications: ^17.2.3
-  awesome_notifications: ^0.9.3+1
+  # Removed awesome_notifications due to Android build incompatibility with Flutter 3.x APIs.
+  # Re-add a Flutter 3+ compatible version later if native notifications are needed.
   badges: ^3.1.2
   flutter_staggered_grid_view: ^0.7.0
   flutter_rating_bar: ^4.0.1

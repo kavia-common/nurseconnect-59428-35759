@@ -14,12 +14,6 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "awesome_notifications",
-      "rootUri": "file:///home/kavia/.pub-cache/hosted/pub.dev/awesome_notifications-0.9.3+1",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
       "name": "badges",
       "rootUri": "file:///home/kavia/.pub-cache/hosted/pub.dev/badges-3.1.2",
       "packageUri": "lib/",
@@ -734,7 +728,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-09-09T17:33:50.121024Z",
+  "generated": "2025-09-09T17:43:51.158591Z",
   "generator": "pub",
   "generatorVersion": "3.7.0",
   "flutterRoot": "file:///opt/flutter",
