@@ -1,16 +1,49 @@
-# nurse_hospital_frontend
+# NurseConnect – nurse_hospital_frontend
 
-A new Flutter project.
+A Flutter mobile app connecting nurses with hospitals. Features include:
+- User registration and login (Nurse or Hospital)
+- Nurse profile management with credential upload
+- Hospital profile and job postings management
+- Location-based job search with distance filters (Google Maps)
+- In-app notifications (local/placeholder)
+- Stripe payments scaffolding
+- Ratings/feedback foundation
+- Modern tab-based UI with FABs for quick actions
 
-## Getting Started
+## Quick start
 
-This project is a starting point for a Flutter application.
+1) Copy env example and fill values:
+```
+cp .env.example .env
+```
+Set:
+- API_BASE_URL
+- STRIPE_PUBLISHABLE_KEY
+- GOOGLE_MAPS_API_KEY (also update android res/values/google_maps_api.xml or use build config)
 
-A few resources to get you started if this is your first Flutter project:
+2) Install dependencies:
+```
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3) Android extra setup:
+- Ensure AndroidManifest includes location and internet permissions (already configured).
+- Set your Google Maps key at `android/app/src/main/res/values/google_maps_api.xml`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4) Run
+```
+flutter run
+```
+
+## Notes
+
+- Integrations with real backend APIs and Stripe PaymentIntents are stubbed; replace service/provider mock calls with your backend endpoints.
+- This app uses Provider for state management and dotenv for configuration.
+- Follows a tab-based layout with separate dashboards for nurses and hospitals and FABs for quick actions.
+
+Directory highlights:
+- lib/models: Domain models
+- lib/providers: State providers for auth, profiles, jobs, notifications, payments
+- lib/screens: UI per role and feature
+- lib/widgets: Reusable components
+- lib/core: Theme and route setup

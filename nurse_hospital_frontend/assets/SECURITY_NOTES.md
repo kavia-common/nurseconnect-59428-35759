@@ -1,0 +1,4 @@
+- Do not hardcode API keys or secrets in code.
+- Use .env and CI secrets to inject STRIPE_PUBLISHABLE_KEY and GOOGLE_MAPS_API_KEY.
+- Payment flows must be initiated server-side with a PaymentIntent; client receives a secret for confirmation.
+- Credential files should be uploaded to secure storage; in-app only holds references/URLs and verification flags returned by backend.

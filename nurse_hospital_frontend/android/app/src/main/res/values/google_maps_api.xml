@@ -1,0 +1,4 @@
+<resources>
+    <!-- This value should be set via build config or replaced during CI. For local dev, set to a dummy if not needed. -->
+    <string name="google_maps_key">YOUR_GOOGLE_MAPS_KEY_HERE</string>
+</resources>
